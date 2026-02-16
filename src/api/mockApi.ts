@@ -28,7 +28,7 @@ function saveToStorage<T>(key: string, data: T[]) {
 	localStorage.setItem(key, JSON.stringify(data));
 }
 
-// In-memory stores, seeded from localStorage
+// In-memory stores localStorage
 let designers: Designer[] = loadFromStorage<Designer>(STORAGE_KEYS.DESIGNERS, []);
 
 let objects: Object3DItem[] = loadFromStorage<Object3DItem>(STORAGE_KEYS.OBJECTS, []);
